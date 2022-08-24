@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import { ProductsService } from 'src/app/services/products.service';
+import { ProductsService } from 'src/app/vladilen-course/services/products.service';
 import {IProduct, IRating} from "../../models/IProduct";
 import {ModalService} from "../../services/modal.service";
 

@@ -1,0 +1,11 @@
+<div
+  class="book-item m-2 rounded border border-red-100 w-1/6"
+  *ngFor="let book of books"
+>
+  <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
+  <button
+    (click)="add.emit(book.id)"
+    class="bg-yellow-300 mb-2 p-2 py-4"
+    data-test="add-button"
+  >Add to Collection</button>
+</div>

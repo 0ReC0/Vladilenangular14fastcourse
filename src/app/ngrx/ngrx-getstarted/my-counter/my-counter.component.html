@@ -1,0 +1,16 @@
+<div class="m-2 flex flex-col w-1/6">
+
+  <button
+    (click)="increment()"
+    class="bg-yellow-200 p-2 mb-2 py-4 text-blue-500 rounded"
+  >Increment
+  </button>
+
+  <app-my-view></app-my-view>
+
+  <button class="bg-gray-200 p-2 py-4 mb-2 text-blue-500 rounded" (click)="decrement()">Decrement</button>
+
+  <button class="bg-red-300 p-2 py-4 mb-2 text-blue-500 rounded" (click)="reset()">Reset Counter</button>
+
+  <button class="bg-yellow-400 p-2 py-4 mb-2 text-blue-500 rounded" (click)="loadData()">Load data</button>
+</div>

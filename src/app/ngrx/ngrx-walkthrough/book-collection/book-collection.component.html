@@ -1,0 +1,11 @@
+<div
+  class="book-item rounded border border-red-100 w-1/6"
+  *ngFor="let book of books"
+>
+  <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
+  <button
+    (click)="remove.emit(book.id)"
+    class="bg-gray-200 mb-2 p-2 py-4"
+    data-test="remove-button"
+  >Remove from Collection</button>
+</div>
